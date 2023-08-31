@@ -4,25 +4,38 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HTML Form</title>
+
+        <style>
+            #test-form {
+                border: solid 1px black;
+                margin: 1em;
+                padding: 1em;
+            }
+
+            #test-form input {
+                margin-bottom: 1em;
+            }
+        </style>
     </head>
 
     <body>
-        <form>
-            <label for="fname">First name:</label><br />
-            <input type="text" id="fname" name="fname" /><br />
-            <label for="lname">Last name:</label><br />
-            <input type="text" id="lname" name="lname" />
-        </form>
+        <form id="test-form" action="submit_form.php" method="post">
+            <label>Button:</label>
+            <input type="button" value="Click Me" />
 
-        <hr />
+            <br />
 
-        <p>Choose your favorite Web language:</p>
-
-        <form>
+            <p>Choose your favorite Web language:</p>
             <input type="radio" id="html" name="fav_language" value="HTML" />
-            <label for="html">HTML</label><br />
+            <label for="html">HTML</label>
+
+            <br />
+
             <input type="radio" id="css" name="fav_language" value="CSS" />
-            <label for="css">CSS</label><br />
+            <label for="css">CSS</label>
+
+            <br />
+
             <input
                 type="radio"
                 id="javascript"
@@ -30,36 +43,121 @@
                 value="JavaScript"
             />
             <label for="javascript">JavaScript</label>
-        </form>
 
-        <hr />
+            <br />
 
-        <form>
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1"> I have a bike</label><br />
+            <label for="vehicle1"> I have a bike</label>
+
+            <br />
             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-            <label for="vehicle2"> I have a car</label><br />
+            <label for="vehicle2"> I have a car</label>
+
+            <br />
+
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
             <label for="vehicle3"> I have a boat</label>
-        </form>
 
-        <hr />
+            <br />
 
-        <form action="/action_page.php">
+            <label>Color:</label>
+            <input type="color" name="color" />
+
+            <br />
+
+            <label>Date:</label>
+            <input type="date" name="date" />
+
+            <br />
+
+            <label>Datetime-local:</label>
+            <input type="datetime-local" name="datetime" />
+
+            <br />
+
+            <label>Email:</label>
+            <input type="email" name="email" />
+
+            <br />
+
+            <label>File:</label>
+            <input type="file" name="file" />
+
+            <br />
+
+            <input type="hidden" name="hidden" value="hidden_value" />
+
+            <label>Image:</label>
+            <input type="image" src="image.png" alt="Submit" />
+
+            <br />
+
+            <label>Month:</label>
+            <input type="month" name="month" />
+
+            <br />
+
+            <label>Number:</label>
+            <input type="number" name="number" />
+
+            <br />
+
+            <label>Password:</label>
+            <input type="password" name="password" />
+
+            <br />
+
+            <label>Radio:</label>
+            <input type="radio" name="radio" value="radio_option1" /> Option 1
+            <input type="radio" name="radio" value="radio_option2" /> Option 2
+
+            <br />
+
+            <label>Range:</label>
+            <input type="range" name="range" min="0" max="100" />
+
+            <br />
+
+            <input type="reset" value="Reset" />
+            <br />
+
+            <label>Search:</label>
+            <input type="search" name="search" />
+
+            <br />
+
+            <label>Tel:</label>
+            <input type="tel" name="tel" />
+
+            <br />
+
+            <label>Text:</label>
+            <input type="text" name="text" />
+
+            <br />
+
+            <label>Time:</label>
+            <input type="time" name="time" />
+
+            <br />
+
+            <label>URL:</label>
+            <input type="url" name="url" />
+
+            <br />
+
+            <label>Week:</label>
+            <input type="week" name="week" />
+
+            <br />
+
             <label for="fname">First name:</label><br />
             <input type="text" id="fname" name="fname" value="John" /><br />
             <label for="lname">Last name:</label><br />
-            <input
-                type="text"
-                id="lname"
-                name="lname"
-                value="Doe"
-            /><br /><br />
+            <input type="text" id="lname" name="lname" value="Doe" />
+
             <input type="submit" value="Submit" />
         </form>
-
-        <!-- The method attribute -->
-        <form action="/action_page.php" method="get"></form>
 
         <hr />
 
@@ -67,6 +165,8 @@
         <!-- Input -->
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" />
+
+        <br />
 
         <!-- Select -->
         <label for="cars">Choose a car:</label>
@@ -77,6 +177,8 @@
             <option value="audi">Audi</option>
         </select>
 
+        <br />
+
         <!-- Size attribute -->
         <label for="cars">Choose a car:</label>
         <select id="cars" name="cars" size="3">
@@ -85,6 +187,8 @@
             <option value="fiat">Fiat</option>
             <option value="audi">Audi</option>
         </select>
+
+        <br />
 
         <!-- Multiple attribute -->
         <label for="cars">Choose a car:</label>
@@ -95,14 +199,19 @@
             <option value="audi">Audi</option>
         </select>
 
+        <br />
+
         <!-- Textarea -->
         <textarea name="message" rows="10" cols="30">
-            The cat was playing in the garden.
-            </textarea
+The cat was playing in the garden.</textarea
         >
+
+        <br />
 
         <!-- Button -->
         <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+        <br />
 
         <!-- Fieldset and legeng -->
         <form action="/action_page.php">
@@ -121,6 +230,8 @@
             </fieldset>
         </form>
 
+        <br />
+
         <!-- Datalist (list of pre-defined options) -->
         <form action="/action_page.php">
             <input list="browsers" />
@@ -132,6 +243,8 @@
                 <option value="Safari"></option>
             </datalist>
         </form>
+
+        <br />
 
         <!-- Output (result of a calculation) -->
         <form
@@ -147,32 +260,6 @@
             <br /><br />
             <input type="submit" />
         </form>
-
-        <hr />
-
-        <!-- Input types -->
-        <input type="button" /><br />
-        <input type="checkbox" /><br />
-        <input type="color" /><br />
-        <input type="date" /><br />
-        <input type="datetime-local" /><br />
-        <input type="email" /><br />
-        <input type="file" /><br />
-        <input type="hidden" /><br />
-        <input type="image" /><br />
-        <input type="month" /><br />
-        <input type="number" /><br />
-        <input type="password" /><br />
-        <input type="radio" /><br />
-        <input type="range" /><br />
-        <input type="reset" /><br />
-        <input type="search" /><br />
-        <input type="submit" /><br />
-        <input type="tel" /><br />
-        <input type="text" /><br />
-        <input type="time" /><br />
-        <input type="url" /><br />
-        <input type="week" /><br />
 
         <hr />
 

@@ -25,6 +25,13 @@
 
         <!-- Title of the document -->
         <title>Learn HTML</title>
+
+        <style>
+            #caption-table caption {
+                padding: 10px;
+                caption-side: bottom;
+            }
+        </style>
     </head>
 
     <body>
@@ -273,6 +280,65 @@
         <pre>$ <kbd>ping mozilla.org</kbd>
             <samp>PING mozilla.org (63.245.215.20): 56 data bytes
             64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+        <hr />
+        <hr />
+
+        <!-- Caption -->
+        <table id="caption-table">
+            <caption>
+                He-Man and Skeletor facts
+            </caption>
+            <tr>
+                <td></td>
+                <th scope="col">He-Man</th>
+                <th scope="col">Skeletor</th>
+            </tr>
+            <tr>
+                <th scope="row">Role</th>
+                <td>Hero</td>
+                <td>Villain</td>
+            </tr>
+            <tr>
+                <th scope="row">Weapon</th>
+                <td>Power Sword</td>
+                <td>Havoc Staff</td>
+            </tr>
+            <tr>
+                <th scope="row">Dark secret</th>
+                <td>Expert florist</td>
+                <td>Cries at romcoms</td>
+            </tr>
+        </table>
+
+        <hr />
+        <hr />
+
+        <!-- Detail and Summary -->
+        <details>
+            <summary>Details</summary>
+            Something small enough to escape casual notice.
+        </details>
+
+        <hr />
+        <hr />
+
+        <!-- Meter and progress -->
+        <label for="fuel">Fuel level:</label>
+        <meter
+            id="fuel"
+            min="0"
+            max="100"
+            low="33"
+            high="66"
+            optimum="80"
+            value="50"
+        >
+            at 50/100
+        </meter>
+
+        <label for="file">File progress:</label>
+        <progress id="file" max="100" value="70">70%</progress>
 
         <hr />
         <hr />

@@ -45,6 +45,8 @@
 
         <hr />
 
+        <!-- List -->
+
         <!-- Unordered list -->
         <ul>
             <li>milk</li>
@@ -85,101 +87,6 @@
             </li>
         </ol>
 
-        <hr />
-
-        <!-- Emphasis and importance -->
-        <p>I am <em>glad</em> you weren't <em>late</em>.</p>
-        <p>My cat is <strong>very</strong> grumpy.</p>
-
-        <!-- Italics, bold and underline -->
-        <p>
-            <b>Lorem ipsum</b> dolor sit
-            <i>amet consectetur adipisicing elit. Est,</i> sed iusto saepe
-            <u>laborum odit eaque culpa accusantium eius.</u>
-        </p>
-
-        <!-- scientific names -->
-        <p>
-            The Ruby-throated Hummingbird (<i>Archilochus colubris</i>) is the
-            most common hummingbird in Eastern North America.
-        </p>
-
-        <!-- foreign words -->
-        <p>
-            The menu was a sea of exotic words like
-            <i lang="uk-latn">vatrushka</i>, <i lang="id">nasi goreng</i> and
-            <i lang="fr">soupe à l'oignon</i>.
-        </p>
-
-        <!-- a known misspelling -->
-        <p>
-            Someday I'll learn how to <u class="spelling-error">spel</u> better.
-        </p>
-
-        <!-- term being defined when used in a definition -->
-        <dl>
-            <dt>Semantic HTML</dt>
-            <dd>
-                Use the elements based on their <b>semantic</b> meaning, not
-                their appearance.
-            </dd>
-        </dl>
-
-        <hr />
-
-        <!-- Hyperlink -->
-        <p>
-            I'm creating a link to
-            <a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.
-        </p>
-        <p>
-            I'm creating a link to
-            <a
-                href="https://www.mozilla.org/en-US/"
-                title="The best place to find more information about Mozilla's mission and how to contribute"
-                >the Mozilla homepage</a
-            >.
-        </p>
-
-        <!-- Block-level link -->
-        <a href="https://developer.mozilla.org/en-US/">
-            <h1>MDN Web Docs</h1>
-        </a>
-        <p>
-            Documenting web technologies, including CSS, HTML, and JavaScript,
-            since 2005.
-        </p>
-
-        <!-- Image link -->
-        <a href="https://developer.mozilla.org/en-US/" target="_blank">
-            <!-- target _blank is open new tab -->
-            <img src="mdn_logo.svg" alt="MDN Web Docs" />
-        </a>
-
-        <!-- Document fragment -->
-        <h2 id="Mailing_address">Mailing address</h2>
-        <p>
-            Want to write us a letter? Use our
-            <a href="contacts.html#Mailing_address">mailing address</a>.
-            <!-- link to the specific id -->
-        </p>
-        <p>
-            The <a href="#Mailing_address">company mailing address</a> can be
-            found at the bottom of this page.
-            <!-- link to another part of doc -->
-        </p>
-
-        <!-- Email link -->
-        <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
-        <!-- Specifying detail -->
-        <a
-            href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email"
-        >
-            Send mail with cc, bcc, subject and body
-        </a>
-
-        <hr />
-
         <!-- Description list -->
         <dl>
             <dt>soliloquy</dt>
@@ -200,6 +107,7 @@
                 feeling, thought, or piece of additional background information.
             </dd>
         </dl>
+
         <!-- Multiple descriptions for one term -->
         <dl>
             <dt>aside</dt>
@@ -216,8 +124,26 @@
         </dl>
 
         <hr />
+        <hr />
 
-        <!-- Quotation -->
+        <!-- Text Formatting -->
+
+        <!-- Mark -->
+        <p><mark> marked text </mark></p>
+
+        <!-- Emphasis and importance -->
+        <p>I am <em>glad</em> you weren't <em>late</em>.</p>
+        <p>My cat is <strong>very</strong> grumpy.</p>
+
+        <!-- Italics, bold and underline -->
+        <p>
+            <b>Lorem ipsum</b> dolor sit
+            <i>amet consectetur adipisicing elit. Est,</i> sed iusto saepe
+            <u>laborum odit eaque culpa accusantium eius.</u>
+        </p>
+
+        <hr />
+
         <!-- Blockquote -->
         <p>Here is a blockquote:</p>
         <blockquote
@@ -241,6 +167,8 @@
                 breaks.
             </q>
         </p>
+
+        <hr />
 
         <!-- Citation -->
         <p>
@@ -346,6 +274,63 @@
             <samp>PING mozilla.org (63.245.215.20): 56 data bytes
             64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
 
+        <hr />
+        <hr />
+
+        <!-- Hyperlink -->
+        <p>
+            I'm creating a link to
+            <a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.
+        </p>
+        <p>
+            I'm creating a link to
+            <a
+                href="https://www.mozilla.org/en-US/"
+                title="The best place to find more information about Mozilla's mission and how to contribute"
+                >the Mozilla homepage</a
+            >.
+        </p>
+
+        <!-- Block-level link -->
+        <a href="https://developer.mozilla.org/en-US/">
+            <h1>MDN Web Docs</h1>
+        </a>
+        <p>
+            Documenting web technologies, including CSS, HTML, and JavaScript,
+            since 2005.
+        </p>
+
+        <!-- Image link -->
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">
+            <!-- target _blank is open new tab -->
+            <img src="mdn_logo.svg" alt="MDN Web Docs" />
+        </a>
+
+        <hr />
+
+        <!-- Document fragment -->
+        <h2 id="Mailing_address">Mailing address</h2>
+        <p>
+            Want to write us a letter? Use our
+            <a href="contacts.html#Mailing_address">mailing address</a>.
+            <!-- link to the specific id -->
+        </p>
+        <p>
+            The <a href="#Mailing_address">company mailing address</a> can be
+            found at the bottom of this page.
+            <!-- link to another part of doc -->
+        </p>
+
+        <!-- Email link -->
+        <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+        <!-- Specifying detail -->
+        <a
+            href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email"
+        >
+            Send mail with cc, bcc, subject and body
+        </a>
+
+        <hr />
         <hr />
 
         <!-- Datetime -->
@@ -549,31 +534,6 @@
             </ul>
             <p>Total cost: $237.89</p>
         </div>
-
-        <hr />
-
-        <!-- Line breaks and horizontal rules -->
-        <p>
-            There once was a man named O'Dell<br />
-            Who loved to write HTML<br />
-            But his structure was bad, his semantics were sad<br />
-            and his markup didn't read very well.
-        </p>
-
-        <p>
-            Ron was backed into a corner by the marauding netherbeasts. Scared,
-            but determined to protect his friends, he raised his wand and
-            prepared to do battle, hoping that his distress call had made it
-            through.
-        </p>
-        <hr />
-        <p>
-            Meanwhile, Harry was sitting at home, staring at his royalty
-            statement and pondering when the next spin off series would come
-            out, when an enchanted distress letter flew through his window and
-            landed in his lap. He read it hazily and sighed; "better get back to
-            work then", he mused.
-        </p>
 
         <hr />
 

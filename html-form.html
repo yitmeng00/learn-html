@@ -19,6 +19,7 @@
     </head>
 
     <body>
+        <h1>Form 1</h1>
         <form id="test-form" action="submit_form.php" method="post">
             <label>Button:</label>
             <input type="button" value="Click Me" />
@@ -162,13 +163,16 @@
         <hr />
 
         <!-- Form elements -->
+        <h1>Form elements</h1>
         <!-- Input -->
+        <h2>Input</h2>
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" />
 
         <br />
 
         <!-- Select -->
+        <h2>Select</h2>
         <label for="cars">Choose a car:</label>
         <select id="cars" name="cars">
             <option value="volvo" selected>Volvo</option>
@@ -180,6 +184,7 @@
         <br />
 
         <!-- Size attribute -->
+        <h2>Size attribute</h2>
         <label for="cars">Choose a car:</label>
         <select id="cars" name="cars" size="3">
             <option value="volvo">Volvo</option>
@@ -191,6 +196,7 @@
         <br />
 
         <!-- Multiple attribute -->
+        <h2>Multiple attribute</h2>
         <label for="cars">Choose a car:</label>
         <select id="cars" name="cars" size="4" multiple>
             <option value="volvo">Volvo</option>
@@ -202,6 +208,7 @@
         <br />
 
         <!-- Textarea -->
+        <h2>Textarea</h2>
         <textarea name="message" rows="10" cols="30">
 The cat was playing in the garden.</textarea
         >
@@ -209,11 +216,13 @@ The cat was playing in the garden.</textarea
         <br />
 
         <!-- Button -->
+        <h2>Button</h2>
         <button type="button" onclick="alert('Hello World!')">Click Me!</button>
 
         <br />
 
         <!-- Fieldset and legend -->
+        <h2>Fieldset and legend</h2>
         <form action="/action_page.php">
             <fieldset>
                 <legend>Personalia:</legend>
@@ -233,6 +242,7 @@ The cat was playing in the garden.</textarea
         <br />
 
         <!-- Datalist (list of pre-defined options) -->
+        <h2>Datalist (list of pre-defined options)</h2>
         <form action="/action_page.php">
             <input list="browsers" />
             <datalist id="browsers">
@@ -247,6 +257,7 @@ The cat was playing in the garden.</textarea
         <br />
 
         <!-- Output (result of a calculation) -->
+        <h2>Output (result of a calculation)</h2>
         <form
             action="/action_page.php"
             oninput="x.value=parseInt(a.value)+parseInt(b.value)"
@@ -264,7 +275,9 @@ The cat was playing in the garden.</textarea
         <hr />
 
         <!-- Input attributes -->
+        <h1>Input attributes</h1>
         <!-- value -->
+        <h2>value</h2>
         <form>
             <label for="fname">First name:</label><br />
             <input type="text" id="fname" name="fname" value="John" /><br />
@@ -273,6 +286,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- readonly -->
+        <h2>readonly</h2>
         <form>
             <label for="fname">First name:</label><br />
             <input
@@ -287,6 +301,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- disabled -->
+        <h2>disabled</h2>
         <form>
             <label for="fname">First name:</label><br />
             <input
@@ -301,6 +316,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- size -->
+        <h2>size</h2>
         <form>
             <label for="fname">First name:</label><br />
             <input type="text" id="fname" name="fname" size="50" /><br />
@@ -309,6 +325,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- max length -->
+        <h2>max length</h2>
         <form>
             <label for="fname">First name:</label><br />
             <input type="text" id="fname" name="fname" size="50" /><br />
@@ -317,6 +334,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- min max -->
+        <h2>min max</h2>
         <form>
             <label for="datemax">Enter a date before 1980-01-01:</label>
             <input
@@ -345,12 +363,14 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- multiple -->
+        <h2>multiple</h2>
         <form>
             <label for="files">Select files:</label>
             <input type="file" id="files" name="files" multiple />
         </form>
 
         <!-- pattern -->
+        <h2>pattern</h2>
         <form>
             <label for="country_code">Country code:</label>
             <input
@@ -363,6 +383,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- placeholder -->
+        <h2>placeholder</h2>
         <form>
             <label for="phone">Enter a phone number:</label>
             <input
@@ -375,18 +396,21 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- required -->
+        <h2>required</h2>
         <form>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required />
         </form>
 
         <!-- step -->
+        <h2>step</h2>
         <form>
             <label for="points">Points:</label>
             <input type="number" id="points" name="points" step="3" />
         </form>
 
         <!-- autofocus -->
+        <h2>autofocus</h2>
         <form>
             <label for="fname">First name:</label><br />
             <input type="text" id="fname" name="fname" autofocus /><br />
@@ -395,6 +419,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- height and width -->
+        <h2>height and width</h2>
         <form>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" /><br /><br />
@@ -410,6 +435,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- list -->
+        <h2>list</h2>
         <form>
             <input list="browsers" />
             <datalist id="browsers">
@@ -422,6 +448,7 @@ The cat was playing in the garden.</textarea
         </form>
 
         <!-- autocomplete -->
+        <h2>autocomplete</h2>
         <form action="/action_page.php" autocomplete="on">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" /><br /><br />
